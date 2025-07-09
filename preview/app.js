@@ -14,10 +14,15 @@ createApp({
     }
   },
   mounted() {
-    fetch('data.json')
+    const basePath = location.pathname.includes('/preview/')
+      ? '/hebrew-verb-table/preview/'
+      : '/hebrew-verb-table/';
+
+    fetch(basePath + 'data.json')
       .then(res => res.json())
       .then(json => {
-        this.verbs = json;
+        this.verbs = json.verbs;
+        this.dataVersion = json.version;
       });
   },
   template: `
