@@ -1,22 +1,22 @@
-# Hebrew Pa'al Verb Table
+# Hebrew Pa'al Verb Table (Vue Edition)
 
-This project displays a table of Hebrew Pa'al verbs in the present tense, including:
-- Shoresh (שׁוֹרֶשׁ)
-- English meaning
-- Conjugation family
-- Infinitive
-- Present tense forms (masculine/feminine, singular/plural)
+This version of the project uses Vue 3 to power an interactive, mobile-friendly interface for browsing Hebrew Pa'al verbs in the present tense.
+
+## Features
+- Table of verbs with shoresh, English meaning, and conjugations
+- Clickable shoreshes open a detailed view
+- Data loaded from external JSON
+- Responsive layout for mobile use
 
 ## Files
+- `index.html` - HTML file with Vue app container and structure
+- `style.css` - Styling including RTL Hebrew support
+- `app.js` - Vue 3 app logic for loading and displaying data
+- `data.json` - External data source
+- `.github/workflows/deploy.yml` - GitHub Actions deployment to Pages
 
-- `index.html`: Main webpage that dynamically loads data from `data.json`.
-- `style.css`: Basic styles for layout and Hebrew RTL formatting.
-- `data.json`: Externalized data source of verb entries.
-- `README.md`: This file.
+## Deployment
+- Push `main` to deploy to root (`/`)
+- Push `dev` to deploy to `/preview`
 
-## Hosting
-
-To publish this as a static site:
-1. Create a GitHub repository.
-2. Upload all files.
-3. Enable GitHub Pages from the repository settings.
+View live: https://ygoldberg.github.io/hebrew-verb-table/
