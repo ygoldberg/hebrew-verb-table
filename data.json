@@ -1,112 +1,115 @@
-[
-  {
-    "shoresh": "כ.ת.ב",
-    "english": "to write",
-    "family": "Pa'al - רגיל",
-    "infinitive": "לִכְתּוֹב",
-    "present_masc_sg": "כּוֹתֵב",
-    "present_masc_pl": "כּוֹתְבִים",
-    "present_fem_sg": "כּוֹתֶבֶת",
-    "present_fem_pl": "כּוֹתְבוֹת"
-  },
-  {
-    "shoresh": "א.כ.ל",
-    "english": "to eat",
-    "family": "Pa'al - רגיל",
-    "infinitive": "לֶאֱכוֹל",
-    "present_masc_sg": "אוֹכֵל",
-    "present_masc_pl": "אוֹכְלִים",
-    "present_fem_sg": "אוֹכֶלֶת",
-    "present_fem_pl": "אוֹכְלוֹת"
-  },
-  {
-    "shoresh": "ל.מ.ד",
-    "english": "to learn",
-    "family": "Pa'al - רגיל",
-    "infinitive": "לִלְמוֹד",
-    "present_masc_sg": "לוֹמֵד",
-    "present_masc_pl": "לוֹמְדִים",
-    "present_fem_sg": "לוֹמֶדֶת",
-    "present_fem_pl": "לוֹמְדוֹת"
-  },
-  {
-    "shoresh": "ש.ת.ה",
-    "english": "to drink",
-    "family": "Pa'al - עו״י",
-    "infinitive": "לִשְׁתוֹת",
-    "present_masc_sg": "שׁוֹתֶה",
-    "present_masc_pl": "שׁוֹתִים",
-    "present_fem_sg": "שׁוֹתָה",
-    "present_fem_pl": "שׁוֹתוֹת"
-  },
-  {
-    "shoresh": "ה.ל.ך",
-    "english": "to go",
-    "family": "Irregular - ע״ו",
-    "infinitive": "לָלֶכֶת",
-    "present_masc_sg": "הוֹלֵך",
-    "present_masc_pl": "הוֹלְכִים",
-    "present_fem_sg": "הוֹלֶכֶת",
-    "present_fem_pl": "הוֹלְכוֹת"
-  },
-  {
-    "shoresh": "ע.ש.ה",
-    "english": "to do/make",
-    "family": "Irregular - Lamed-He",
-    "infinitive": "לַעֲשׂוֹת",
-    "present_masc_sg": "עוֹשֶׂה",
-    "present_masc_pl": "עוֹשִׂים",
-    "present_fem_sg": "עוֹשָׂה",
-    "present_fem_pl": "עוֹשׂוֹת"
-  },
-  {
-    "shoresh": "ג.ו.ר",
-    "english": "to live/dwell",
-    "family": "Pa'al - עו״י",
-    "infinitive": "לָגוּר",
-    "present_masc_sg": "גָּר",
-    "present_masc_pl": "גָּרִים",
-    "present_fem_sg": "גָּרָה",
-    "present_fem_pl": "גָּרוֹת"
-  },
-  {
-    "shoresh": "ש.י.ר",
-    "english": "to sing",
-    "family": "Pa'al - רגיל",
-    "infinitive": "לָשִׁיר",
-    "present_masc_sg": "שָׁר",
-    "present_masc_pl": "שָׁרִים",
-    "present_fem_sg": "שָׁרָה",
-    "present_fem_pl": "שָׁרוֹת"
-  },
-  {
-    "shoresh": "ד.ב.ר",
-    "english": "to speak",
-    "family": "Pi'el",
-    "infinitive": "לְדַבֵּר",
-    "present_masc_sg": "מְדַבֵּר",
-    "present_masc_pl": "מְדַבְּרִים",
-    "present_fem_sg": "מְדַבֶּרֶת",
-    "present_fem_pl": "מְדַבְּרוֹת"
-  },
-  {
-    "shoresh": "ר.צ.ה",
-    "english": "to want",
-    "family": "Irregular - Lamed-He",
-    "infinitive": "לִרְצוֹת",
-    "present_masc_sg": "רוֹצֶה",
-    "present_masc_pl": "רוֹצִים",
-    "present_fem_sg": "רוֹצָה",
-    "present_fem_pl": "רוֹצוֹת"
-  },
-  {
-    "shoresh": "י.ד.ע",
-    "english": "to know",
-    "family": "Irregular - Pa'al",
-    "infinitive": "לָדַעַת",
-    "present_masc_sg": "יוֹדֵעַ",
-    "present_masc_pl": "יוֹדְעִים",
-    "present_fem_sg": "יוֹדַעַת",
-    "present_fem_pl": "יוֹדְעוֹת"
-  }
-]
+{
+  "version": "2025-07-09T04:13:16Z",
+  "verbs": [
+    {
+      "shoresh": "כ.ת.ב",
+      "english": "to write",
+      "family": "Pa'al - רגיל",
+      "infinitive": "לִכְתּוֹב",
+      "present_masc_sg": "כּוֹתֵב",
+      "present_masc_pl": "כּוֹתְבִים",
+      "present_fem_sg": "כּוֹתֶבֶת",
+      "present_fem_pl": "כּוֹתְבוֹת"
+    },
+    {
+      "shoresh": "א.כ.ל",
+      "english": "to eat",
+      "family": "Pa'al - רגיל",
+      "infinitive": "לֶאֱכוֹל",
+      "present_masc_sg": "אוֹכֵל",
+      "present_masc_pl": "אוֹכְלִים",
+      "present_fem_sg": "אוֹכֶלֶת",
+      "present_fem_pl": "אוֹכְלוֹת"
+    },
+    {
+      "shoresh": "ל.מ.ד",
+      "english": "to learn",
+      "family": "Pa'al - רגיל",
+      "infinitive": "לִלְמוֹד",
+      "present_masc_sg": "לוֹמֵד",
+      "present_masc_pl": "לוֹמְדִים",
+      "present_fem_sg": "לוֹמֶדֶת",
+      "present_fem_pl": "לוֹמְדוֹת"
+    },
+    {
+      "shoresh": "ש.ת.ה",
+      "english": "to drink",
+      "family": "Pa'al - עו״י",
+      "infinitive": "לִשְׁתוֹת",
+      "present_masc_sg": "שׁוֹתֶה",
+      "present_masc_pl": "שׁוֹתִים",
+      "present_fem_sg": "שׁוֹתָה",
+      "present_fem_pl": "שׁוֹתוֹת"
+    },
+    {
+      "shoresh": "ה.ל.ך",
+      "english": "to go",
+      "family": "Irregular - ע״ו",
+      "infinitive": "לָלֶכֶת",
+      "present_masc_sg": "הוֹלֵך",
+      "present_masc_pl": "הוֹלְכִים",
+      "present_fem_sg": "הוֹלֶכֶת",
+      "present_fem_pl": "הוֹלְכוֹת"
+    },
+    {
+      "shoresh": "ע.ש.ה",
+      "english": "to do/make",
+      "family": "Irregular - Lamed-He",
+      "infinitive": "לַעֲשׂוֹת",
+      "present_masc_sg": "עוֹשֶׂה",
+      "present_masc_pl": "עוֹשִׂים",
+      "present_fem_sg": "עוֹשָׂה",
+      "present_fem_pl": "עוֹשׂוֹת"
+    },
+    {
+      "shoresh": "ג.ו.ר",
+      "english": "to live/dwell",
+      "family": "Pa'al - עו״י",
+      "infinitive": "לָגוּר",
+      "present_masc_sg": "גָּר",
+      "present_masc_pl": "גָּרִים",
+      "present_fem_sg": "גָּרָה",
+      "present_fem_pl": "גָּרוֹת"
+    },
+    {
+      "shoresh": "ש.י.ר",
+      "english": "to sing",
+      "family": "Pa'al - רגיל",
+      "infinitive": "לָשִׁיר",
+      "present_masc_sg": "שָׁר",
+      "present_masc_pl": "שָׁרִים",
+      "present_fem_sg": "שָׁרָה",
+      "present_fem_pl": "שָׁרוֹת"
+    },
+    {
+      "shoresh": "ד.ב.ר",
+      "english": "to speak",
+      "family": "Pi'el",
+      "infinitive": "לְדַבֵּר",
+      "present_masc_sg": "מְדַבֵּר",
+      "present_masc_pl": "מְדַבְּרִים",
+      "present_fem_sg": "מְדַבֶּרֶת",
+      "present_fem_pl": "מְדַבְּרוֹת"
+    },
+    {
+      "shoresh": "ר.צ.ה",
+      "english": "to want",
+      "family": "Irregular - Lamed-He",
+      "infinitive": "לִרְצוֹת",
+      "present_masc_sg": "רוֹצֶה",
+      "present_masc_pl": "רוֹצִים",
+      "present_fem_sg": "רוֹצָה",
+      "present_fem_pl": "רוֹצוֹת"
+    },
+    {
+      "shoresh": "י.ד.ע",
+      "english": "to know",
+      "family": "Irregular - Pa'al",
+      "infinitive": "לָדַעַת",
+      "present_masc_sg": "יוֹדֵעַ",
+      "present_masc_pl": "יוֹדְעִים",
+      "present_fem_sg": "יוֹדַעַת",
+      "present_fem_pl": "יוֹדְעוֹת"
+    }
+  ]
+}
