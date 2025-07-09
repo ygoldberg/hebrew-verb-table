@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hebrew Pa'al Verbs - Present Tense</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Hebrew Pa'al Verbs - Present Tense</h1>
+  <table id="verb-table">
+    <thead>
+      <tr>
+        <th>Shoresh (שׁוֹרֶשׁ)</th>
+        <th>English Meaning</th>
+        <th>Conjugation Family</th>
+        <th>Infinitive</th>
+        <th>Present Masc. Sg.</th>
+        <th>Present Masc. Pl.</th>
+        <th>Present Fem. Sg.</th>
+        <th>Present Fem. Pl.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Rows will be inserted here by JavaScript -->
+    </tbody>
+  </table>
+
+  <script>
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        const tbody = document.querySelector('#verb-table tbody');
+        data.forEach(verb => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td class="hebrew">${verb.shoresh}</td>
+            <td>${verb.english}</td>
+            <td>${verb.family}</td>
+            <td class="hebrew">${verb.infinitive}</td>
+            <td class="hebrew">${verb.present_masc_sg}</td>
+            <td class="hebrew">${verb.present_masc_pl}</td>
+            <td class="hebrew">${verb.present_fem_sg}</td>
+            <td class="hebrew">${verb.present_fem_pl}</td>
+          `;
+          tbody.appendChild(row);
+        });
+      });
+  </script>
+</body>
+</html>
