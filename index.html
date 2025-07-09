@@ -5,47 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hebrew Pa'al Verbs - Present Tense</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <h1>Hebrew Pa'al Verbs - Present Tense</h1>
-  <table id="verb-table">
-    <thead>
-      <tr>
-        <th>Shoresh (שׁוֹרֶשׁ)</th>
-        <th>English Meaning</th>
-        <th>Conjugation Family</th>
-        <th>Infinitive</th>
-        <th>Present Masc. Sg.</th>
-        <th>Present Masc. Pl.</th>
-        <th>Present Fem. Sg.</th>
-        <th>Present Fem. Pl.</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Rows will be inserted here by JavaScript -->
-    </tbody>
-  </table>
+  <div id="app">
+    <h1>Hebrew Pa'al Verbs - Present Tense</h1>
 
-  <script>
-    fetch('data.json')
-      .then(response => response.json())
-      .then(data => {
-        const tbody = document.querySelector('#verb-table tbody');
-        data.forEach(verb => {
-          const row = document.createElement('tr');
-          row.innerHTML = `
-            <td class="hebrew">${verb.shoresh}</td>
-            <td>${verb.english}</td>
-            <td>${verb.family}</td>
-            <td class="hebrew">${verb.infinitive}</td>
-            <td class="hebrew">${verb.present_masc_sg}</td>
-            <td class="hebrew">${verb.present_masc_pl}</td>
-            <td class="hebrew">${verb.present_fem_sg}</td>
-            <td class="hebrew">${verb.present_fem_pl}</td>
-          `;
-          tbody.appendChild(row);
-        });
-      });
-  </script>
+    <div v-if="!selectedVerb">
+      <table>
+        <thead>
+          <tr>
+            <th>Shoresh (שׁוֹרֶשׁ)</th>
+            <th>English Meaning</th>
+            <th>Conjugation Family</th>
+            <th>Infinitive</th>
+            <th>Present Masc. Sg.</th>
+            <th>Present Masc. Pl.</th>
+            <th>Present Fem. Sg.</th>
+            <th>Present Fem. Pl.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="verb in verbs" :key="verb.shoresh">
+            <td class="hebrew clickable" @click="selectVerb(verb)">{{ verb.shoresh }}</td>
+            <td>{{ verb.english }}</td>
+            <td>{{ verb.family }}</td>
+            <td class="hebrew">{{ verb.infinitive }}</td>
+            <td class="hebrew">{{ verb.present_masc_sg }}</td>
+            <td class="hebrew">{{ verb.present_masc_pl }}</td>
+            <td class="hebrew">{{ verb.present_fem_sg }}</td>
+            <td class="hebrew">{{ verb.present_fem_pl }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div v-else id="single-verb">
+      <button @click="selectedVerb = null">← Back to all verbs</button>
+      <div id="verb-details">
+        <h2 class="hebrew">{{ selectedVerb.shoresh }}</h2>
+        <p><strong>English:</strong> {{ selectedVerb.english }}</p>
+        <p><strong>Conjugation Family:</strong> {{ selectedVerb.family }}</p>
+        <p><strong>Infinitive:</strong> <span class="hebrew">{{ selectedVerb.infinitive }}</span></p>
+        <p><strong>Present Masc. Sg.:</strong> <span class="hebrew">{{ selectedVerb.present_masc_sg }}</span></p>
+        <p><strong>Present Masc. Pl.:</strong> <span class="hebrew">{{ selectedVerb.present_masc_pl }}</span></p>
+        <p><strong>Present Fem. Sg.:</strong> <span class="hebrew">{{ selectedVerb.present_fem_sg }}</span></p>
+        <p><strong>Present Fem. Pl.:</strong> <span class="hebrew">{{ selectedVerb.present_fem_pl }}</span></p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
