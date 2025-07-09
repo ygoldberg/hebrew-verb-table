@@ -5,7 +5,9 @@ createApp({
     return {
       verbs: [],
       selectedVerb: null,
-      isPreview: location.pathname.startsWith('/hebrew-verb-table/preview/')
+      isPreview: location.pathname.startsWith('/hebrew-verb-table/preview/'),
+      appVersion: "0.1",
+      dataVersion: null
     };
   },
   methods: {
@@ -17,7 +19,6 @@ createApp({
     const basePath = location.pathname.includes('/preview/')
       ? '/hebrew-verb-table/preview/'
       : '/hebrew-verb-table/';
-
     fetch(basePath + 'data.json')
       .then(res => res.json())
       .then(json => {
@@ -72,6 +73,10 @@ createApp({
           <p><strong>Present Fem. Pl.:</strong> <span class="hebrew">{{ selectedVerb.present_fem_pl }}</span></p>
         </div>
       </div>
+
+      <footer style="text-align: center; margin-top: 2em; font-size: 0.9em; color: #666;">
+        App version: {{ appVersion }} | Data version: {{ dataVersion || 'loading...' }}
+      </footer>
     </div>
   `
 }).mount('#app');
