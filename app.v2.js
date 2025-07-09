@@ -5,7 +5,7 @@ createApp({
     return {
       verbs: [],
       selectedVerb: null,
-      isPreview: location.pathname.startsWith('/hebrew-verb-table/preview/'),
+      isPreview: location.pathname.includes('/preview/'),
       appVersion: "0.1",
       dataVersion: null
     };
@@ -16,9 +16,17 @@ createApp({
     }
   },
   mounted() {
-    const basePath = location.pathname.includes('/preview/')
-      ? '/hebrew-verb-table/preview/'
-      : '/hebrew-verb-table/';
+    const path = location.pathname;
+    let basePath = '';
+
+    if (path.includes('/preview/')) {
+      basePath = '/hebrew-verb-table/preview/';
+    } else if (path.includes('/hebrew-verb-table/')) {
+      basePath = '/hebrew-verb-table/';
+    } else {
+      basePath = './'; // for local dev
+    }
+
     fetch(basePath + 'data.json')
       .then(res => res.json())
       .then(json => {
@@ -46,8 +54,8 @@ createApp({
             </tr>
           </thead>
           <tbody>
-            <tr v-for="verb in verbs" :key="verb.shoresh">
-              <td class="hebrew clickable" @click="selectVerb(verb)">{{ verb.shoresh }}</td>
+            <tr v-for="verb in verbs" :key="verb.shoresh" class="clickable-row" @click="selectVerb(verb)">
+              <td class="hebrew">{{ verb.shoresh }}</td>
               <td>{{ verb.english }}</td>
               <td>{{ verb.family }}</td>
               <td class="hebrew">{{ verb.infinitive }}</td>
