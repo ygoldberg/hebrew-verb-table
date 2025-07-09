@@ -4,21 +4,9 @@ body {
   background-color: #fdfdfd;
   color: #333;
 }
-h1 {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-h2 {
-  text-align: center;
-  font-size: 1.6em;
-  margin-top: 0;
-}
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 0 auto;
-  font-size: 1em;
 }
 th, td {
   border: 1px solid #ccc;
@@ -27,17 +15,13 @@ th, td {
 }
 th {
   background-color: #f0f0f0;
-  font-weight: bold;
 }
 td.hebrew {
-  font-family: "David", "Noto Sans Hebrew", sans-serif;
   direction: rtl;
+  font-family: "Noto Sans Hebrew", "David", sans-serif;
 }
 tr:nth-child(even) {
   background-color: #fafafa;
-}
-tr:hover {
-  background-color: #f1f1f1;
 }
 .clickable {
   cursor: pointer;
@@ -47,20 +31,17 @@ tr:hover {
 #single-verb {
   max-width: 600px;
   margin: auto;
-  padding: 1em;
 }
 #verb-details p {
   font-size: 1.2em;
-  margin: 0.5em 0;
 }
 button {
   background: #007acc;
   color: white;
   border: none;
   padding: 8px 16px;
-  font-size: 1em;
-  cursor: pointer;
   margin-bottom: 1em;
+  cursor: pointer;
 }
 button:hover {
   background: #005ea0;
